@@ -6,10 +6,10 @@ import mysql.connector
 @st.cache_resource
 def get_connection():
     return mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="Jonwal@971",   # <- Replace this with your actual password
-        database="pricing_db"
+        host="sql12.freesqldatabase.com",
+        user="sql12789127",
+        password="68d3WKY3rv",   
+        database="sql12789127"
     )
 
 conn = get_connection()

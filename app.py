@@ -4,15 +4,20 @@ import mysql.connector
 
 # --- DB Connection ---
 @st.cache_resource
+@st.cache_resource
 def get_connection():
-    return mysql.connector.connect(
-        host="sql12.freesqldatabase.com",
-        user="sql12789127",
-        password="68d3WKY3rv",   
-        database="sql12789127"
-    )
-
-conn = get_connection()
+    try:
+        conn = mysql.connector.connect(
+            host="sql12.freesqldatabase.com",
+            user="sql12789127",
+            password="68d3WKY3rv",
+            database="sql12789127",
+            port=3306
+        )
+        return conn
+    except mysql.connector.Error as e:
+        st.error(f"❌ Connection failed: {e}")
+        return None
 
 st.title("🧠 Smart Pricing Optimization Tool")
 st.markdown("Analyze discount sensitivity, conversion, and margin by user cohort.")

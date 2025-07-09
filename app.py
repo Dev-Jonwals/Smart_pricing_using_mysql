@@ -10,7 +10,8 @@ def get_connection():
         host="localhost",
         user="root",
         password="Jonwal@971",   # <- Replace this with your actual password
-        database="pricing_db"
+        database="pricing_db",
+        port=3306
     )
 
 conn = get_connection()

@@ -1,7 +1,5 @@
 #  Smart Pricing Optimization Tool (SQL + Tableau)
 
-# Smart Pricing Optimization for Quick Commerce
-
 ## 📌 Project Overview
 This project focuses on analyzing and optimizing discount strategies in a quick commerce environment using transaction-level data.  
 The goal is to identify opportunities to **reduce unnecessary discounts**, **improve margins**, and **apply targeted promotions** based on customer behavior.
